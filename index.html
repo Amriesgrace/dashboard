@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Admin Dashboard Page</title>
+
+        <!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/plugins/highcharts/css/highcharts.css">
+        <link href="assets/css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/custom.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- end::Body -->
+    <body>
+		<!-- Start::Pre loader -->
+		<!-- <div class="loading">
+			<img src="assets/img/ajax-modal-loading.gif" alt="preloader">
+		</div> -->
+		<!-- End::preloader -->
+		<!-- Start top navbar -->
+		<div id="top" class="clearfix">
+			<!-- Start::Logo -->
+			<div class="app-logo">
+				<a href="index.html" class="logo">
+					<span>My Custom Dashboard</span>
+				</a>
+			</div>
+			<!-- End::logo -->
+			<!-- Start:: Sidebar toggle btn -->
+			<a href="" class="sidebar-open-btn">
+				<!-- <i class="fa fa-dedent"></i> -->
+				<img src="assets/img/sidebar_inline_toggler_icon_light2.jpg" alt="">
+			</a>
+			<a href="" class="sidebar-open-btn-mobile">
+				<i class="fa fa-indent"></i>
+			</a>
+			<!-- End:: Sidebar toggle btn -->
+			<!-- Start:: Search box -->
+			<form action="" class="searchform">
+				<input type="text" class="searchbox" placeholder="Search...">
+				<span class="searchbtn"><i class="fa fa-search"></i></span>
+				<!-- use bootstarp input-group here -->
+			</form>
+			<!-- End:: Search box -->
+			<!-- Start::Top MENu -->
+			<ul class="top-menu">
+				<li><a href="">Actions</a></li>
+				<li><a href="">Reports</a></li>
+				<li class="dropdown">
+					<a href="" data-toggle="dropdown" 
+						class="dropdown-toggle">More Actions 
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="">Yearly reports</a></li>
+						<li><a href="">ksjijsc</a></li>
+						<li><a href="">kj foods</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- End::Top MENu -->
+
+			<!-- start::sidepanel toggle button  -->
+			<a href="#sidepanel" class="sidepanel-open-btn">
+				<i class="fa fa-outdent"></i>
+			</a>
+			<!-- End::sidepanel toggle button -->
+			<!-- Start::right top menu  -->
+			<ul class="top-right-menu">
+				<li class="dropdown link">
+					<a href="" data-toggle="dropdown" class="data-toggle hd-btn">
+						Create New
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-list">
+						<li>
+							<a href="">
+								<i class="fa fa-paper-plane-o"></i>
+								Product or Item
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="fa fa-font">Comment</i>
+							</a>
+						</li>
+						<li><a href=""><i></i>Responses</a></li>
+						<li><a href=""><i></i>Write ups</a></li>
+					</ul>
+				</li>
+				<li class="link">
+					<a href="" class="notifications">6</a>
+				</li>
+				<li class="dropdown link">
+					<a href="" data-toggle="dropdown" class="data-toggle profilebox">
+						<img src="assets/img/avatar3_small.jpg" alt="">
+						<b>Jonathan Doe</b>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-list dropdown-menu-right">
+						<li>
+							<a href="#"><i class="fa falist fa-inbox"></i>Inbox
+								<span class="badge label-danger">4</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa falist fa-file-o"></i>Files
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa falist fa-wrench"></i>Settings
+							</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="#">
+								<i class="fa falist fa-lock"></i> Lockscreen
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa falist fa-power-off"></i> Logout
+							</a>
+						</li>
+					</ul>
+				</li>
+				
+			<!-- End:: right top menu -->
+		</div>
+		<!-- End top navbar -->
+
+		<!-- Start::Sidebar MEnu -->
+		<div class="sidebar clearfix" id="sidebar">
+			<ul class="sidebar-panel nav">
+				<li class="sidebar-title">COMPONENTS</li>
+				<li>
+					<a href="index.html">
+						<span class="icon color-grey">
+							<i class="fa fa-home"></i>
+						</span>
+						Dashboard
+						<span class="label label-default">3</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon color-grey"><i class="fa fa-envelope-o"></i></span>
+						Messages
+						<span class="label label-default">19</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon color-grey">
+							<i class="fa fa-flask"></i>
+						</span>
+						<span class="">Employees</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="">
+						<span class="icon color9">
+							<i class="fa fa-th"></i>
+						</span>Kpi
+						<span class="caret"></span>
+					</a>
+					<ul>
+					  <li><a href="">Basic Kpi</a></li>
+					  <li><a href="">Admin Kpi</a></li>
+					</ul>
+				</li>
+				<li class="sidebar-menu">
+					<a href="#" class="sidebar-menu-item">
+						<span class="icon color7">
+							<i class="fa fa-flask"></i>
+						</span>Reports
+						<span class="caret"></span>
+					</a>
+					<ul class="sidebar-menu-item-list">
+					  <li><a href="">work reports</a></li>
+					  <li><a href="">Attendance reports</a></li>
+					  <li><a href="">late comer reports</a></li>
+					  <li><a href="">Early reports</a></li>
+					  <li><a href="">Employee Reports</a></li>
+					</ul>
+				</li>
+				
+				<li>
+					<a href="#">
+						<span class="icon color-grey">
+							<i class="fa fa-pie-chart"></i>
+						</span>
+						Punctuality
+						
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon color-grey">
+							<i class="fa fa-pie-chart"></i>
+						</span>
+						Staff
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon color-grey">
+							<i class="fa fa-gear"></i>
+						</span>
+						Settings
+					</a>
+				</li>
+			</ul>
+
+			<ul class="sidebar-panel nav">
+				<li class="sidebar-title">More</li>
+				<li>
+					<a href="#">
+						<span class="icon color-grey">
+							<i class="fa fa-columns"></i>
+						</span>
+						Lorem Ipsum
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon color-grey">
+							<i class="fa fa-columns"></i>
+						</span>
+						Lorem Ipsum
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon color-grey">
+							<i class="fa fa-columns"></i>
+						</span>
+						Lorem ipsum
+					</a>
+				</li>
+			</ul>
+
+			<div class="sidebar-plan">
+				pro plan
+				<a href="" class="link">Upgrade</a>
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="60"
+						aria-valuemin="0" aria-valuemax="100" style="width:60%"></div>
+				</div>
+				<span class="space">42GB/ 100GB</span>
+			</div>
+		</div>
+		<!-- End::Sidebar -->
+
+
+		<!-- Start:: Main Content -->
+		<div class="content">
+			<div class="page-header">
+				<ol class="breadcrumb">
+					<li>
+						<a href="">Dashboard</a>
+					</li>
+					<li><span>punctuality</span></li>
+				</ol>
+				<h1 class="title">Dashboard</h1>
+				
+				<div class="right">
+					<div class="btn-group" role="group" aria-label="...">
+						<a href="index.html" class="btn btn-light">Dashboard</a>
+						<a href="#" class="btn btn-light"><i class="fa fa-refresh"></i></a>
+						<a href="#" class="btn btn-light"><i class="fa fa-search"></i></a>
+						<a href="#" class="btn btn-light" id="topstats"><i class="fa fa-line-chart"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="element-wrapper">
+				<div class="wrapper">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="big-text">
+									<p>Today's Sales</p>
+									<span>$243,000</span>
+								</div>
+								<div class="small-text">
+									<span class="text-danger">
+										<i class="fa fa-arrow-down"></i>
+									</span>
+									<span>30%</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card">
+								<div class="big-text">
+									<p>Today's Sales</p>
+									<span>$243,000</span>
+								</div>
+								<div class="small-text">
+									<span class="text-danger">
+										<i class="fa fa-arrow-down"></i>
+									</span>
+									<span>30%</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card">
+								<div class="big-text">
+									<p>Today's Sales</p>
+									<span>$243,000</span>
+								</div>
+								<div class="small-text">
+									<span class="text-danger">
+										<i class="fa fa-arrow-down"></i>
+									</span>
+									<span>30%</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card">
+								<div class="big-text">
+									<p>Today's Sales</p>
+									<span>$243,000</span>
+								</div>
+								<div class="small-text">
+									<span class="text-danger">
+										<i class="fa fa-arrow-down"></i>
+									</span>
+									<span>30%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 mt-5">
+							<div class="" id="container"></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			
+		</div>
+
+		<!-- END::MAin COntent -->
+		
+
+		
+		<script src="assets/plugins/bootstrap/js/jquery-1.9.1.min.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/plugins/bootstrap/bootstrap-toggle.min.js"></script>
+		<script src="assets/plugins/highcharts/js/highcharts.js"></script>
+		<script src="assets/plugins/highcharts/js/modules/exporting.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			Highcharts.chart('container', {
+				chart: {
+					type: 'bar'
+				},
+				title: {
+					text: 'Historic World Population by Region'
+				},
+				subtitle: {
+					text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+				},
+				xAxis: {
+					categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+					title: {
+						text: null
+					}
+				},
+				yAxis: {
+					min: 0,
+					title: {
+						text: 'Population (millions)',
+						align: 'high'
+					},
+					labels: {
+						overflow: 'justify'
+					}
+				},
+				tooltip: {
+					valueSuffix: ' millions'
+				},
+				plotOptions: {
+					bar: {
+						dataLabels: {
+							enabled: true
+						}
+					}
+				},
+				legend: {
+					layout: 'vertical',
+					align: 'right',
+					verticalAlign: 'top',
+					x: -40,
+					y: 80,
+					floating: true,
+					borderWidth: 1,
+					backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+					shadow: true
+				},
+				credits: {
+					enabled: false
+				},
+				series: [{
+					name: 'Year 1800',
+					data: [107, 31, 635, 203, 2]
+				}, {
+					name: 'Year 1900',
+					data: [133, 156, 947, 408, 6]
+				}, {
+					name: 'Year 2012',
+					data: [1052, 954, 4250, 740, 38]
+				}]
+			});
+		</script>
+    </body>
+	<!-- end::Body -->
+</html>

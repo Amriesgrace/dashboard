@@ -1,0 +1,707 @@
+/**Admin Dashboard SCSS
+** Version 1.0
+** Author Amriesgrace
+** Copyright 2018
+**/
+@font-face {
+  font-family: "Work Sans";
+  src: url("../plugins/fonts/Work_Sans/WorkSans-Regular.ttf");
+  src: url("../plugins/fonts/Work_Sans/WorkSans-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../plugins/fonts/Poppins/Poppins-Regular.ttf");
+  src: url("../plugins/fonts/Poppins/Poppins-Black.ttf") format("ttf");
+}
+
+/*** COLORS***/
+/*** FONTS ***/
+/**Base CSS**/
+/* line 2, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*** COLORS***/
+/* line 8, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.bg-white {
+  background: #fff;
+}
+
+/* line 9, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.color-dark {
+  color: #5d5f77;
+}
+
+/* line 10, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.bg-dark {
+  background: #5d5f77;
+}
+
+/* line 11, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.bg-light {
+  background: #f2f3f8;
+}
+
+/* line 12, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-dark {
+  background: #868aa8;
+}
+
+/* line 16, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+body {
+  background: #868aa8;
+  font-family: "Work Sans", sans-serif;
+  color: #242424;
+  font-size: 14px;
+  line-height: 1.7rem;
+}
+
+/***Top NAVBAR***/
+/* line 25, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+#top {
+  height: 60px;
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 900;
+  top: 0;
+}
+
+/* line 32, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+#top .fa {
+  padding: 0 5px;
+}
+
+/* line 37, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.app-logo {
+  width: 250px;
+  height: 60px;
+  background-color: #5d5f77;
+  color: #fff;
+  position: relative;
+  padding: 19px 0 0 0px;
+  float: left;
+  text-align: center;
+}
+
+/* line 46, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.app-logo .logo {
+  text-decoration: none;
+}
+
+/* line 48, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.app-logo .logo span {
+  color: #fff;
+}
+
+/* line 52, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.app-logo .logo:hover {
+  text-decoration: none;
+}
+
+/*** SideBar ***/
+/* line 58, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-open-btn {
+  height: 60px;
+  display: inline-block;
+  font-size: 26px;
+  width: 62px;
+  text-align: center;
+  color: #5d5f77;
+  float: left;
+  background: #fff;
+  padding-top: 19px;
+  border-right: 2px solid;
+  z-index: 1;
+}
+
+/* line 72, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-open-btn:hover, .sidebar-open-btn:active {
+  background: #fff;
+  color: #5d5f77;
+}
+
+/* line 76, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-open-btn-mobile {
+  height: 60px;
+  display: none;
+  font-size: 26px;
+  width: 62px;
+  text-align: center;
+  float: left;
+  color: #868aa8;
+  padding-top: 19px;
+}
+
+/* line 87, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-open-btn-mobile:hover, .sidebar-open-btn-mobile:active {
+  background: #fff;
+  color: #5d5f77;
+}
+
+/* line 93, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.searchform {
+  width: 220px;
+  margin: 0 20px;
+  float: left;
+  padding-top: 14px;
+  position: relative;
+}
+
+/* line 100, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.searchbox {
+  height: 32px;
+  width: 220px;
+  padding-left: 20px;
+  padding-right: 36px;
+  border-radius: 999px;
+  border: 1px solid #5d5f77;
+  box-shadow: inset none;
+}
+
+/* line 110, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.searchbox:focus {
+  background: #fff;
+  box-shadow: none;
+  border-top: none;
+}
+
+/* line 115, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.searchbtn {
+  border: none;
+  color: #f2f3f8;
+  background: none;
+  position: absolute;
+  top: 18px;
+  font-size: 16px;
+  right: 15px;
+}
+
+/*** TOP MENU ***/
+/* line 127, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-menu {
+  float: left;
+  padding-top: 20px;
+  padding-left: 0px;
+  font-weight: 600;
+  margin-left: -7px;
+}
+
+/* line 133, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-menu a {
+  color: #242424;
+  padding: 7px;
+}
+
+/* line 137, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-menu a:hover {
+  color: #5d5f77;
+  text-decoration: none;
+}
+
+/* line 141, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-menu a:focus {
+  text-decoration: none;
+}
+
+/* line 144, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-menu li {
+  display: inline;
+}
+
+/* line 149, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidepanel-open-btn {
+  height: 60px;
+  font-size: 26px;
+  display: block;
+  width: 62px;
+  text-align: center;
+  float: right;
+  padding-top: 19px;
+  z-index: 1;
+  border-left: 1px solid #5d5f77;
+}
+
+/* line 160, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidepanel-open-btn:hover, .sidepanel-open-btn:active {
+  background: #fff;
+}
+
+/***topright menu ***/
+/* line 166, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-right-menu {
+  line-height: 1.7rem;
+  float: right;
+  padding-right: 20px;
+  padding-left: 10px;
+  padding-top: 15px;
+  font-weight: 600;
+  /**profile box**/
+  /** Notifications **/
+  /*** hd button **/
+}
+
+/* line 173, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-right-menu .link {
+  display: inline-block;
+  padding-left: 8px;
+  height: 30px;
+}
+
+/* line 177, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-right-menu .link a {
+  display: block;
+}
+
+/* line 180, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-right-menu .link a:hover {
+  text-decoration: none;
+}
+
+/* line 183, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-right-menu .link a:focus {
+  text-decoration: none;
+}
+
+/* line 187, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-right-menu .dropdown-menu {
+  min-width: 135px;
+}
+
+/* line 189, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-right-menu .dropdown-menu .list-title {
+  text-align: center;
+}
+
+/* line 192, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-right-menu .dropdown-menu li {
+  position: relative;
+  display: block;
+}
+
+/* line 197, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-right-menu a {
+  color: #242424;
+}
+
+/* line 201, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-right-menu .profilebox {
+  color: rgba(42, 61, 104, 0.95);
+}
+
+/* line 203, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-right-menu .profilebox img {
+  width: 32px;
+  height: 31px;
+  float: left;
+  border-radius: 100%;
+  margin-right: 7px;
+  margin-top: -4px;
+}
+
+/* line 211, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-right-menu .profilebox .caret {
+  margin-left: 5px;
+  color: #5d5f77;
+}
+
+/* line 216, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-right-menu .profilebox:hover {
+  color: #868aa8;
+}
+
+/* line 221, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-right-menu .notifications {
+  color: #fff;
+  padding: 4px 12px;
+  font-weight: bold;
+  background: #5d5f77;
+  border-radius: 999px;
+}
+
+/* line 228, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-right-menu .notifications:hover {
+  background-attachment: rgba(93, 95, 119, 0.5);
+}
+
+/* line 232, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-right-menu .hdbutton {
+  background: #fff;
+  color: #404B5F;
+  padding: 4px 16px;
+  border-radius: 999px;
+}
+
+/* line 238, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.top-right-menu .hdbutton:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+/* line 243, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.mt-5 {
+  margin-top: 3em;
+}
+
+/*** sidebar ***/
+/* line 247, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar {
+  width: 250px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  font-family: 'Poppins';
+  background: #868aa8;
+  font-weight: 300;
+  font-size: 13px;
+  z-index: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 258, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar .label {
+  font-size: 10px;
+  position: relative;
+  line-height: 12px;
+  padding: 2px 5px;
+  position: absolute;
+  right: 35px;
+  top: 12px;
+  font-weight: 600;
+}
+
+/* line 268, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar .label-default {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* line 272, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-panel {
+  background: none;
+  margin: 0px 20px 0px 20px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 0px;
+}
+
+/* line 279, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-panel li a {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 9px 20px 9px 54px;
+  margin-left: -20px;
+  margin-right: -20px;
+  position: relative;
+}
+
+/* line 286, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-panel li a .caret {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* line 293, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-panel li .icon {
+  position: absolute;
+  left: 20px;
+  top: 8px;
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 19px;
+  border-radius: 3px;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  padding-top: 1px;
+}
+
+/* line 306, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-panel li a:hover, .sidebar-panel li a.active {
+  color: #f2f2f2;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* line 309, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-panel li a:hover .icon, .sidebar-panel li a.active .icon {
+  color: #fff;
+}
+
+/* line 313, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-panel li ul {
+  display: none;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: rgba(0, 0, 0, 0.1);
+  font-size: 13px;
+  margin: 0px -20px 0px -20px;
+  font-weight: 400;
+}
+
+/* line 321, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-panel li ul li {
+  position: relative;
+  margin: 0;
+}
+
+/* line 324, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-panel li ul li a {
+  margin: 0px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 9px 20px 9px 54px;
+}
+
+/* line 329, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-panel li ul li a:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+/* line 337, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-title {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+  padding: 0;
+  margin: 0 0 5px 3px;
+  letter-spacing: 0.4px;
+}
+
+/* line 344, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-plan {
+  padding: 20px;
+  font-size: 12px;
+  bottom: 0;
+}
+
+/* line 348, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-plan .progress {
+  height: 6px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 7px 0;
+}
+
+/* line 353, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-plan .progress-bar {
+  background: #5d5f77;
+}
+
+/* line 356, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-plan .link {
+  position: absolute;
+  right: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 361, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-plan .link:hover {
+  color: #fff;
+}
+
+/* line 364, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.sidebar-plan .space {
+  display: block;
+  font-size: 11px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 374, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.content {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 80px;
+  margin-left: 250px;
+  background: #f2f3f8;
+}
+
+/*** PAge HEader ***/
+/* line 382, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.page-header {
+  background: #fff;
+  margin: -20px -30px 20px -30px;
+  padding: 20px;
+  border-bottom: none;
+  position: relative;
+}
+
+/* line 389, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.page-header .title {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: normal;
+  font-weight: normal;
+  color: #242424;
+  padding-bottom: 6px;
+}
+
+/* line 400, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.page-header .right {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  min-width: 500px;
+  text-align: right;
+}
+
+/* line 406, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.page-header .right .btn-group {
+  float: right;
+}
+
+/* line 409, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.page-header .right .btn {
+  padding-left: 14px;
+  padding-right: 14px;
+  font-size: 13px;
+}
+
+/* line 414, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.page-header .right .btn .fa {
+  margin: 0 4px;
+}
+
+/* line 415, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.page-header .right .btn .no-border {
+  border: none;
+}
+
+/* line 420, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.page-header .right .btn-group .btn {
+  border: 1px solid #E8EBED;
+}
+
+/* line 423, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.page-header .pagination {
+  margin: 0;
+}
+
+/* line 426, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.page-header .widget-inline-list {
+  right: 0;
+  bottom: -25px;
+  position: relative !important;
+}
+
+/* line 432, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.element-wrapper {
+  background: #fff;
+}
+
+/* line 435, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.card {
+  border: 1px solid #868aa8;
+  box-shadow: 3px 4px 2px #ddd;
+  height: 150px;
+  padding: 2em 1em;
+  margin: 2em;
+}
+
+/* line 442, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.big-text {
+  text-align: center;
+}
+
+/* line 444, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.big-text span {
+  font-size: 34px;
+  color: #5d5f77;
+}
+
+/* line 449, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.small-text {
+  text-align: center;
+}
+
+/* line 451, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/_base.scss */
+.small-text span {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1280px) {
+  /* line 4, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .top-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 9, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .profilebox b {
+    display: none;
+  }
+  /* line 12, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .searchform {
+    display: none;
+  }
+  /* line 15, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .sidebar {
+    display: none;
+  }
+  /* line 18, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .content {
+    margin-left: 0;
+  }
+  /* line 21, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .sidebar-open-btn {
+    display: none;
+  }
+  /* line 24, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .sidebar-open-btn-mobile {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 29, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .sidebar {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  /* line 35, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .page-header .right {
+    display: none;
+  }
+  /* line 36, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .sidebar {
+    display: none;
+    width: 100%;
+  }
+  /* line 37, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .app-logo {
+    display: none;
+  }
+  /* line 38, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .profile-left .btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  /* line 41, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .top-right-menu {
+    display: none;
+  }
+  /* line 42, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .app-logo {
+    padding-left: 0;
+    background: none;
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: -4;
+  }
+  /* line 50, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .app-logo .logo span {
+    color: #5d5f77;
+    font-weight: 700;
+  }
+}
+
+/*# sourceMappingURL=../css/main.map */

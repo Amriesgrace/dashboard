@@ -1,0 +1,28 @@
+@font-face{
+    font-family: "Work Sans";
+    src: url('../plugins/fonts/Work_Sans/WorkSans-Regular.ttf');
+    src: url("../plugins/fonts/Work_Sans/WorkSans-Regular.ttf") format('ttf');
+}
+@font-face{
+    font-family: "Poppins";
+    src: url('../plugins/fonts/Poppins/Poppins-Regular.ttf');
+    src: url("../plugins/fonts/Poppins/Poppins-Black.ttf") format('ttf');
+}
+
+/*** COLORS***/
+$color-dark: #5d5f77;
+$color-light:#f2f3f8;
+$color-grey:#399BFF;
+$color-side-dark:#868aa8;
+$bg-white: #fff;
+$primary-text-color:#242424;
+
+
+
+/*** FONTS ***/
+$primary-font:'Work Sans', sans-serif;
+$title-font: 'Poppins', sans-serif;
+$primary-font-size: 14px;
+
+
+

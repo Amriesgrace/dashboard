@@ -1,0 +1,83 @@
+@media screen and (max-width: 1280px) {
+  /* line 4, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .top-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 9, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .profilebox b {
+    display: none;
+  }
+  /* line 12, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .searchform {
+    display: none;
+  }
+  /* line 15, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .sidebar {
+    display: none;
+  }
+  /* line 18, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .content {
+    margin-left: 0;
+  }
+  /* line 21, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .sidebar-open-btn {
+    display: none;
+  }
+  /* line 24, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .sidebar-open-btn-mobile {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 29, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .sidebar {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  /* line 35, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .page-header .right {
+    display: none;
+  }
+  /* line 36, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .sidebar {
+    display: none;
+    width: 100%;
+  }
+  /* line 37, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .app-logo {
+    display: none;
+  }
+  /* line 38, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .profile-left .btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  /* line 41, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .top-right-menu {
+    display: none;
+  }
+  /* line 42, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .app-logo {
+    padding-left: 0;
+    background: none;
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: -4;
+  }
+  /* line 50, C:/Users/Baron2Oxide/Desktop/Admin dashboard/Assets/sass/responsive.scss */
+  .app-logo .logo span {
+    color: #5d5f77;
+    font-weight: 700;
+  }
+}
+
+/*# sourceMappingURL=../css/responsive.map */

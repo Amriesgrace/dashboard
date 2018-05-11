@@ -1,0 +1,58 @@
+
+
+@media screen and (max-width:1280px){
+    .top-menu{
+        display: none;
+    }
+}
+@media screen and (max-width:1024px){
+    .profilebox b{
+        display: none;
+    }
+    .searchform{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .content{
+        margin-left: 0;
+    }
+    .sidebar-open-btn{
+        display: none;
+    }
+    .sidebar-open-btn-mobile{
+        display: block;
+    }
+}
+@media screen and (min-width:1024px){
+    .sidebar{
+        display: block !important;
+    }
+
+}
+@media screen and (max-width: 760px) {
+	.page-header .right{ display: none; }
+	.sidebar{display: none; width: 100%;}
+	.app-logo{display: none;}
+	.profile-left .btn{display: none;}
+}
+@media screen and (max-width: 428px) {
+	.top-right-menu{display: none;}
+	.app-logo{
+		padding-left: 0;
+		background: none;
+		display: block;
+		position: absolute;
+		width: 100%;
+        z-index: -4;
+        .logo{
+            span{
+                color: #5d5f77;
+                font-weight: 700;
+            }
+            
+        }
+    }
+    
+}
